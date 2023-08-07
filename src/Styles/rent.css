@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.compo{
+    width:100wv;
+}
+.top{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+    font-size: x-large;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif ;
+}
+.filter-it{
+    font-family: Raleway, 'Courier New', Courier, monospace;
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    width: 1155px;
+    border: 2px solid rgb(232, 227, 227);
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+.filter-it>button{
+    border-radius: 5px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-family: Raleway, 'Courier New', Courier, monospace;
+}
+.property{
+    display: flex;
+    width: 1155px;
+    margin-left: 160px;
+    padding-top: 20px;
+}
