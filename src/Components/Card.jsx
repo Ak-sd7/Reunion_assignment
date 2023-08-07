@@ -1,9 +1,7 @@
 import jsonData from "../data/data.json"
 import "../Styles/Card.css"
-import { Fav } from "./additional"
-import Bed from '@mui/icons-material/BedOutlined';
-import Bath from '@mui/icons-material/BathtubOutlined';
-import Area from '@mui/icons-material/CropOriginalOutlined';
+import { Fav, Bathrooms, Rooms, Meter } from "./additional"
+
 
 const Card = () => {
   return (
@@ -11,17 +9,21 @@ const Card = () => {
         <div className="card">
         <img src={jsonData.imgurl}/>
         <div className="details">
-            <div>
-                <h1>${jsonData.price}/<span style={{fontSize:"20px"}}>month</span></h1>
-                <p>{jsonData.address}</p>
+            <div className="intro">
+                <h2>${jsonData.price}<span style={{fontSize:"20px", color:"gray"}}>/month</span></h2>
+                <h1>{jsonData.propName}</h1>
             </div> 
             <Fav/>
         </div>
+        <div><p>{jsonData.address}</p></div>
         <hr/>
         <div className="add-ons">
-            <div><Bed/> {jsonData.bed} beds</div>
-            <div><Bath/> {jsonData.bathrooms} bathrooms</div>
-            <div><Area/> {jsonData.area} m²</div>
+            <Rooms/>
+            <hr/>
+            <Bathrooms/>
+            <hr/>
+            <Meter/>
+            <hr/>
         </div>
         </div>
     </div>

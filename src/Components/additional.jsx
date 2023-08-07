@@ -23,12 +23,28 @@ export const Fav = () => {
     );
   };
 
-  export const bed = ()=>{
+  export const Rooms = ()=>{
     return(
-        <div>
-            <div><Bed/> {jsonData.bed} beds</div>
-            <div><Bath/> {jsonData.bathrooms} bathrooms</div>
-            <div><Area/> {jsonData.area} m²</div>
+        <div className='cc'>
+            <Bed/> 
+            <div style={{paddingLeft:"3px"}}>{jsonData.bed} beds</div>
         </div>
     );
   }
+  export const Bathrooms = ()=>{
+    return(
+        <div className='cc'>
+            <Bath/> 
+            <div style={{paddingLeft:"3px"}}>{jsonData.bathrooms} bathrooms</div>
+        </div>
+    );
+  }
+  export const Meter = ()=>{
+    return(
+        <div className='cc'>
+            <Area/> 
+            <div style={{paddingLeft:"3px"}}>{jsonData.area} m²</div>
+        </div>
+    );
+  }
+  
