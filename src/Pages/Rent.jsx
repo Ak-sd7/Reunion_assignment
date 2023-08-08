@@ -5,7 +5,7 @@ import { useState } from "react";
 import Filter from "../Components/Filter";
 
 const Rent = () => {
-  const maxData = 42;
+  const maxData = 100;
   const data = infoData.slice(0, maxData);
 
   const [showFilter, setShowFilter] = useState(false);
@@ -74,6 +74,11 @@ const Rent = () => {
   };
 
   const filteredResults = filteredData.filter(applyFilters);
+  const handleSubmit = () => {
+    const filtered = infoData.filter(applyFilters);
+    setFilteredData(filtered);
+    setShowFilter(true); // Show filtered results after submit
+  };
 
   return (
     <div className="m_compo">
@@ -92,7 +97,7 @@ const Rent = () => {
           handleStreetInputChange={handleStreetInputChange}
           handleCityInputChange = {handleCityInputChange}
           handleBedsInputChange={handleBedsInputChange}
-          toggleFilter={toggleFilter}
+          toggleFilter={handleSubmit}
         />
         <div className="property">
             {
@@ -107,7 +112,8 @@ const Rent = () => {
                   sqft={info.sqft}
                   price = {info.price}
                 />
-              ))):(data.map((info, index)=>(
+              ))
+              ):(data.map((info, index)=>(
                 <Card
                   key={index}
                   street={info.street}

@@ -24,7 +24,7 @@ const Filter = ({ streetFilter, handleStreetInputChange, toggleFilter, handleCit
         </div>
         <hr style={{height:"35px"}}/>
         <div>
-            <h4>Price:</h4>
+            <h4>Price: (195k - 2m)</h4>
             <input 
                 style={{width:"100px"}}
                 type="number" 
