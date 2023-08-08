@@ -10,10 +10,10 @@ const Card = ({showFilter, toggleFilter, image_id, street, citi, bed, bath, sqft
     }
       return input.replace(/[0-9]/g, '');
   }
-  
+
   return (
     <div className="card-container">
-        <div className={`card ${showFilter ? "filter-active" : ""}`}>
+        <div className={`card`}>
         <img src={image_id}/>
         <div className="details">
             <div className="intro">
