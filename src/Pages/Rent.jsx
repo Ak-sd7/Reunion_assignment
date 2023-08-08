@@ -5,8 +5,8 @@ import { useState } from "react";
 import Filter from "../Components/Filter";
 
 const Rent = () => {
-  const maxData = 100;
-  const data = infoData.slice(0, maxData);
+  // const maxData = 100;
+  const data = infoData
 
   const [showFilter, setShowFilter] = useState(false);
   const [streetFilter, setStreetFilter] = useState("");
