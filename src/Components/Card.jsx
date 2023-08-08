@@ -10,20 +10,19 @@ const Card = () => {
         <img src={jsonData.imgurl}/>
         <div className="details">
             <div className="intro">
-                <h2>${jsonData.price}<span style={{fontSize:"20px", color:"gray"}}>/month</span></h2>
+                <h3>${jsonData.price}<span style={{fontSize:"17px", color:"gray"}}>/month</span></h3>
                 <h1>{jsonData.propName}</h1>
             </div> 
             <Fav/>
         </div>
-        <div><p>{jsonData.address}</p></div>
+        <div style={{paddingLeft:"20px", paddingBottom:"10px"}}><p>{jsonData.address}</p></div>
         <hr/>
         <div className="add-ons">
             <Rooms/>
-            <hr/>
+            <hr style={{height:"25px"}}/>
             <Bathrooms/>
-            <hr/>
+            <hr style={{height:"25px"}}/>
             <Meter/>
-            <hr/>
         </div>
         </div>
     </div>

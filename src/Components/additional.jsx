@@ -16,7 +16,7 @@ export const Fav = () => {
     return (
         <div className="favButton">
             <button onClick={favHandler} >
-                {isFavorited ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+                {isFavorited ? <FavoriteOutlinedIcon style={{fontSize:"35px"}} /> : <FavoriteBorderOutlinedIcon style={{fontSize:"35px"}}/>}
             </button>
         </div>
       
@@ -48,3 +48,4 @@ export const Fav = () => {
     );
   }
   
+// "imgurl":"https://img.freepik.com/free-vector/cute-house_23-2147512078.jpg?q=10&h=200",

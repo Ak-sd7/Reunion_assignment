@@ -3,18 +3,29 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    width: 340px; 
+    max-width: 370px; 
     /* height: 500px; */
     margin-bottom: 50px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.card>img{
+    height: 210px;
+    width: 361px;
+    overflow: hidden;
 }
 .details{
-    padding: 20px;
+    padding: 25px 25px 1.5px 20px;
     display: flex;
     justify-content: space-between;
 }
-.intro h2{
+.intro h3{
     letter-spacing: 0.75px;
     color: rgb(69, 69, 164);
+}
+.intro h1{
+    padding-top: 10px;
 }
 .favButton{
     padding-left: 70px;
@@ -23,9 +34,9 @@
     border-radius: 50%;
     height: 37px;
     padding: 5px;
-    border: 1px solid rgb(131, 127, 127);
+    border: 1px solid rgb(255, 255, 255);
     color: rgb(185, 85, 85);
-    background-color: rgb(252, 244, 244);
+    background-color: rgb(251, 251, 251);
 }
 .add-ons{
     display: flex;
@@ -43,5 +54,8 @@
 .cc{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+}
+hr{
+    color: rgb(123, 118, 118);
 }
