@@ -18,7 +18,11 @@
     margin-bottom: 30px;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     border-radius: 10px;
+    cursor: pointer;
     /* margin-right: 8px; */
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .card>img{
     max-height: 180px;
@@ -55,9 +59,9 @@
     border-radius: 50%;
     height: 37px;
     padding: 5px;
-    border: 1px solid rgb(255, 255, 255);
+    border: none;
     color: rgb(185, 85, 85);
-    background-color: rgb(251, 251, 251);
+    background-color: white;
 }
 .add-ons{
     display: flex;
