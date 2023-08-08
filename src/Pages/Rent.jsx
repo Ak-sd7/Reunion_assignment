@@ -1,7 +1,11 @@
 import "../Styles/rent.css"
 import Card from "../Components/Card"
- 
+import infoData from "../data/info.json"
+
 const Rent = () => {
+  const maxData = 42;
+  const data = infoData.slice(0, maxData);
+
   return (
     <div className="m_compo">
       <div className="compo">
@@ -16,7 +20,20 @@ const Rent = () => {
           <button>Submit</button>
         </div>
         <div className="property">
-            <Card/>
+            {
+              data.map((info, index)=>(
+                <Card
+                  key={index}
+                  street={info.street}
+                  image_id={info.image_id}
+                  bed={info.bed}
+                  bath={info.bath}
+                  citi={info.citi}
+                  sqft={info.sqft}
+                  price = {info.price}
+                />
+              ))
+            }
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 
 .compo{
     width:100wv;
+    /* margin-left: 150px; */
 }
 .top{
     display: flex;
@@ -38,7 +39,10 @@
 }
 .property{
     display: flex;
-    width: 1155px;
-    margin-left: 160px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 1250px;
+    margin-left: 140px;
     padding-top: 20px;
 }

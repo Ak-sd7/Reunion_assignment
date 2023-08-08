@@ -1,31 +1,47 @@
+.card-container{
+    display: flex;
+}
 .card{
     border: 2px solid rgb(232, 227, 227);
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    max-width: 370px; 
-    /* height: 500px; */
-    margin-bottom: 50px;
+    max-width: 400px;
+    max-height: 400px;
+    flex: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 .card>img{
-    height: 210px;
-    width: 361px;
-    overflow: hidden;
+    max-height: 180px;
+    width: 410px;
+    /* overflow: hidden; */
+    object-fit: cover;
 }
 .details{
     padding: 25px 25px 1.5px 20px;
     display: flex;
+    /* max-height: 400px; */
     justify-content: space-between;
 }
 .intro h3{
+    font-size: 21px;
     letter-spacing: 0.75px;
     color: rgb(69, 69, 164);
 }
 .intro h1{
+    font-size: 22px;
     padding-top: 10px;
+    padding-right: 10px;
+}
+.para{
+    padding-left:20px;
+    padding-bottom:15px;
+    font-size:17px;
+    color: rgb(108, 106, 106)
 }
 .favButton{
     padding-left: 70px;
