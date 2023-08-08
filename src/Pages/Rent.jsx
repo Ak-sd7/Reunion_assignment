@@ -1,10 +1,17 @@
 import "../Styles/rent.css"
 import Card from "../Components/Card"
 import infoData from "../data/info.json"
+import { useState } from "react";
 
 const Rent = () => {
   const maxData = 42;
   const data = infoData.slice(0, maxData);
+  
+  const [showFilter, setShowFilter] = useState(false);
+
+  const toggleFilter = () => {
+    setShowFilter(!showFilter);
+  };
 
   return (
     <div className="m_compo">
@@ -17,13 +24,15 @@ const Rent = () => {
           <h3>When</h3>
           <h3>Price</h3>
           <h3>Property Type</h3>
-          <button>Submit</button>
+          <button onClick={toggleFilter}>Submit</button>
         </div>
         <div className="property">
             {
               data.map((info, index)=>(
                 <Card
                   key={index}
+                  showFilter={showFilter}
+                  toggleFilter={toggleFilter}
                   street={info.street}
                   image_id={info.image_id}
                   bed={info.bed}

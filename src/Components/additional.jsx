@@ -4,7 +4,6 @@ import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import Bed from '@mui/icons-material/BedOutlined';
 import Bath from '@mui/icons-material/BathtubOutlined';
 import Area from '@mui/icons-material/CropOriginalOutlined';
-import jsonData from "../data/data.json"
 
 export const Fav = () => {
     const [isFavorited, setIsFavorited] = useState(false);

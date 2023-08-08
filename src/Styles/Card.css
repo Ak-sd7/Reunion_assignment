@@ -1,7 +1,11 @@
 .card-container{
     display: flex;
 }
+.filter-active {
+    filter: grayscale(100%);
+  }
 .card{
+    transition: filter 0.3s ease-in-out;
     border: 2px solid rgb(232, 227, 227);
     background-color: rgb(255, 255, 255);
     display: flex;

@@ -1,18 +1,19 @@
-import jsonData from "../data/data.json"
 import "../Styles/Card.css"
 import { Fav, Bathrooms, Rooms, Meter } from "./additional"
 
 
-const Card = ({image_id, street, citi, bed, bath, sqft, price}) => {
-  function removeNumbers(inputString) {
-    if (typeof inputString !== 'string') {
-      return ''; // Handle non-string input
+const Card = ({showFilter, toggleFilter, image_id, street, citi, bed, bath, sqft, price}) => {
+
+  function removeNumbers(input) {
+      if (typeof input !== 'string') {
+        return ''; // Handle non-string input
+    }
+      return input.replace(/[0-9]/g, '');
   }
-    return inputString.replace(/[0-9]/g, '');
-}
+  
   return (
     <div className="card-container">
-        <div className="card">
+        <div className={`card ${showFilter ? "filter-active" : ""}`}>
         <img src={image_id}/>
         <div className="details">
             <div className="intro">
