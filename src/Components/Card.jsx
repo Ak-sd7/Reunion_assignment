@@ -6,7 +6,7 @@ const Card = ({showFilter, toggleFilter, image_id, street, citi, bed, bath, sqft
 
   function removeNumbers(input) {
       if (typeof input !== 'string') {
-        return ''; // Handle non-string input
+        return '';
     }
       return input.replace(/[0-9]/g, '');
   }
@@ -19,7 +19,6 @@ const Card = ({showFilter, toggleFilter, image_id, street, citi, bed, bath, sqft
             <div className="intro">
                 <h3>${price}<span style={{fontSize:"17px", color:"gray"}}>/month</span></h3>
                 <h1>{removeNumbers(street)}</h1>
-                {/* <h1>Hello</h1> */}
             </div> 
             <Fav/>
         </div>

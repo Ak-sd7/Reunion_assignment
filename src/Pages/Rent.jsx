@@ -16,6 +16,18 @@ const Rent = () => {
   const [maxPrice, setMaxPrice] = useState("");
   const [bedsFilter, setBedsFilter] = useState("");
 
+  const handleMinPriceChange = (event) => {
+    setMinPrice(event.target.value);
+  };
+  
+  const handleMaxPriceChange = (event) => {
+    setMaxPrice(event.target.value);
+  };
+
+  const handleBedsInputChange = (event) => {
+    setBedsFilter(event.target.value);
+  };
+
   function removeNumbers(input) {
     if (typeof input !== 'string') {
       return '';
@@ -39,23 +51,6 @@ const Rent = () => {
       info.citi.toLowerCase().includes(cityFilter.toLowerCase())
     );
     setFilteredData(filtered);
-  };
-
-
-  const toggleFilter = () => {
-    setShowFilter(!showFilter);
-  };
-
-  const handleMinPriceChange = (event) => {
-    setMinPrice(event.target.value);
-  };
-  
-  const handleMaxPriceChange = (event) => {
-    setMaxPrice(event.target.value);
-  };
-
-  const handleBedsInputChange = (event) => {
-    setBedsFilter(event.target.value);
   };
 
   const applyFilters = (info) => {

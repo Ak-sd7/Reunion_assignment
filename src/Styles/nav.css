@@ -19,17 +19,21 @@ nav{
     position: sticky;
 }
 
+/* header tag */
 header{
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+/* div containing ul  */
 .estate{
     padding-left: 50px;
     font-size: 25px;
     font-family: Dancing Script, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* className for logo area */
 .st{
     color: black;
 }
@@ -37,6 +41,8 @@ header{
 .st:hover{
     color: rgb(98, 98, 182);
 }
+
+/* className for li  */
 .link{
     text-decoration: none;
     color: black;
@@ -44,6 +50,8 @@ header{
 .link:hover{
     color:  blue;
 }
+
+/* right side of navbar  */
 .start{
     display: flex;
 }
@@ -63,6 +71,8 @@ header{
 .nav-side>li:hover{
     transform: translateY(-3px);
 }
+
+/* left side of navbar  */
 .end{
     display: flex;
     text-decoration: none;
@@ -83,6 +93,8 @@ header{
 .nav-end>li:hover{
     transform: translateY(-3px);
 }
+
+/* login and signup buttons  */
 .login{
     border: 2.5px solid rgba(154, 146, 154, 0.509);
     padding: 5px 10px;
@@ -98,11 +110,3 @@ header{
     color: antiquewhite;
     text-decoration: none;
 }
-
-/* .link.clicked {
-    border: 2.5px solid rgba(76, 140, 235, 0.509);
-    /* padding: 5px 10px; */
-    /* border-radius: 12px;
-    background-color: #e0e0e0; */
-  /* Add other styles as needed */
-/* } */

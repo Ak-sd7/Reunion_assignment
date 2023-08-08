@@ -1,7 +1,7 @@
 .card-container{
     display: flex;
 }
-
+/* Card component  */
 .card{
     transition: filter 0.3s ease-in-out;
     border: 2px solid rgb(232, 227, 227);
@@ -19,21 +19,22 @@
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     border-radius: 10px;
     cursor: pointer;
-    /* margin-right: 8px; */
 }
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+
+/* Image on card  */
 .card>img{
     max-height: 180px;
     width: 410px;
-    /* overflow: hidden; */
     object-fit: cover;
 }
+
+/* Details on card  */
 .details{
     padding: 25px 25px 1.5px 20px;
     display: flex;
-    /* max-height: 400px; */
     justify-content: space-between;
 }
 .intro h3{
@@ -52,6 +53,8 @@
     font-size:17px;
     color: rgb(108, 106, 106)
 }
+
+/* Heart shape button for marking favorite  */
 .favButton{
     padding-left: 70px;
 }
@@ -63,6 +66,8 @@
     color: rgb(185, 85, 85);
     background-color: white;
 }
+
+/* consist of icons and detail  */
 .add-ons{
     display: flex;
     flex-direction: row;
@@ -76,11 +81,15 @@
     padding-right: 8px;
     padding-left: 10px;
 }
+
+/* className for the div in add-ons functions */
 .cc{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+/* Horizontal rule */
 hr{
     color: rgb(123, 118, 118);
 }

@@ -3,8 +3,9 @@
 
 .compo{
     width:100wv;
-    /* margin-left: 150px; */
 }
+
+/* heading  */
 .top{
     display: flex;
     margin-bottom: 50px;
@@ -16,14 +17,14 @@
     word-spacing: 2px;
     font-family: Quicksand, Arial, Helvetica, sans-serif ;
 }
+
+/* filter */
 .filter-it{
     font-family: Raleway, 'Courier New', Courier, monospace;
     display: flex;
     letter-spacing: 2px;
     justify-content: space-around;
     align-items: center;
-    /* margin-left: 140px; */
-    /* width: 1250px; */
     border: 2px solid rgb(232, 227, 227);
     padding: 25px;
     border-radius: 20px;
@@ -33,6 +34,8 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+/* Submit button  */
 .filter-it>button{
     border-radius: 5px;
     background-color: rgb(85, 85, 215);
@@ -47,13 +50,14 @@
     transition: transform 0.3s ease-in-out;
     color: aquamarine;
 }
+
+/* Card area  */
 .property{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* width: 1250px; */
-    /* margin-left: 140px; */
+    gap: 14px;
     padding-top: 20px;
     width: 80vw;
     margin-right: 10vw;

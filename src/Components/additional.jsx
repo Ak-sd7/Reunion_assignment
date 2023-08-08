@@ -47,4 +47,3 @@ export const Fav = () => {
     );
   }
   
-// "imgurl":"https://img.freepik.com/free-vector/cute-house_23-2147512078.jpg?q=10&h=200",
