@@ -45,9 +45,9 @@ const Filter = ({ streetFilter, handleStreetInputChange, toggleFilter, handleCit
         <div>
             <h4>Bed Rooms:</h4>
             <input
-                style={{width:"100px"}}
+                style={{width:"102px"}}
                 type="number" 
-                placeholder="No. of bedrooms" 
+                placeholder="No. of beds" 
                 value={bedsFilter} 
                 onChange={handleBedsInputChange} 
             />
